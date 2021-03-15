@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    doctype html
+    html(lang='en')
+    head
+    title Staff Directory
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/semantic-ui@2.3.3/dist/semantic.min.css')
+    style.
+      table.ui.celled img { display: inline-block; }
+      footer { margin: 35px 0 15px 0; text-align: center }
+    body
+    
+    h1.ui.center.aligned.header Staff Directory
+    .ui.container
+      table.ui.celled.table.center.aligned
+        thead
+          tr
+            th Avatar
+            th First Name
+            th Last Name
+            th Email
+            th Phone
+            th City
+        tbody
+          

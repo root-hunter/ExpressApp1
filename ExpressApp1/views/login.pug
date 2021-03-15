@@ -1,0 +1,66 @@
+doctype html
+
+head
+  link(href='css/login.css' rel='stylesheet')
+  script(src='js/login.js')
+.container
+  section#formHolder
+    .row
+      // Brand Box
+      .col-sm-6.brand
+        a.logo(href='#')
+          | MR 
+          span .
+        .heading
+          h2 Marina
+          p Your Right Choice
+        .success-msg
+          p Great! You are one of our members now
+          a.profile(href='#') Your Profile
+      // Form Box
+      .col-sm-6.form
+        // Login Form
+        .login.form-peice.switched
+          form.login-form(action='#' method='post')
+            .form-group
+              label(for='loginemail') Email Adderss
+              input#loginemail(type='email' name='loginemail' required='')
+            .form-group
+              label(for='loginPassword') Password
+              input#loginPassword(type='password' name='loginPassword' required='')
+            .CTA
+              input(type='submit' value='Login')
+              a.switch(href='#') I&apos;m New
+        // End Login Form
+        // Signup Form
+        .signup.form-peice
+          form.signup-form(action='#' method='post')
+            .form-group
+              label(for='name') Full Name
+              input#name.name(type='text' name='username')
+              span.error
+            .form-group
+              label(for='email') Email Adderss
+              input#email.email(type='email' name='emailAdress')
+              span.error
+            .form-group
+              label(for='phone')
+                | Phone Number - 
+                small Optional
+              input#phone(type='text' name='phone')
+            .form-group
+              label(for='password') Password
+              input#password.pass(type='password' name='password')
+              span.error
+            .form-group
+              label(for='passwordCon') Confirm Password
+              input#passwordCon.passConfirm(type='password' name='passwordCon')
+              span.error
+            .CTA
+              input#submit(type='submit' value='Signup Now')
+              a.switch(href='#') I have an account
+        // End Signup Form
+  footer
+    p
+      | Form made by: 
+      a(href='http://mohmdhasan.tk' target='_blank') Mohmdhasan.tk
